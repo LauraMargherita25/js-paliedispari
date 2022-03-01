@@ -1,33 +1,23 @@
-let userInput = prompt("Write a palindrome word or phrase");
-// let userInputToArr = userInput.split('');
-// userInput.reverse();
-// console.log(userInput);
-// userInput = userInput.replace(/\s/g, '');
-// let arrayString = userInput.split('');
-
-// arrayString = arrayString.reverse();
-// let parolaInvertita = arrayString.join('');
-
-// if(userInput === parolaInvertita){
-
-//     console.log("La stringa è palindroma");
-
-// }
-// else{
-
-//     console.log("La stringa non è palindroma");
-
-// }
+/*let userInput = prompt("Write a palindrome word or phrase");
 
 function reverse(parolaAlContrario) {
     let reverseWord = [];
 
     for ( let i = parolaAlContrario.length-1; i >= 0; i--){
-        reverseWord.push(parolaAlContrario[i]);
+        reverseWord += parolaAlContrario[i];
     }
 
     return reverseWord;
 
 }                                              
 
-console.log(userInput.reverse())
+console.log(reverse(userInput));*/
+
+let userInput = parseInt(prompt("Choose a number between 1 to 5"));
+
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+console.log(min(1),  max(6))
